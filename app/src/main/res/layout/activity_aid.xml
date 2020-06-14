@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.mingrisoft.aidknowledge.AidActivity1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--返回上一界面的按钮-->
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/back_bg"
+            android:layout_margin="5dp"
+            android:onClick="OnBack"/>
+        <!--显示标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="20sp"
+            android:id="@+id/titleaid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text = "急救场景"
+            android:textColor="#FF0000"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:scrollbars="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="16sp"
+                android:layout_below="@+id/titleaid"
+                android:id = "@+id/textaid"
+                android:singleLine="false"
+                android:text="急救知识"
+                />
+        </ScrollView>
+        <!--显示文字内容-->
+
+    </RelativeLayout>
+</LinearLayout>

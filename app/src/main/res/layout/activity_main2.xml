@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme"
+        app:title="Query"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+    <!--自定义圆盘菜单-->
+
+    <!--显示地理位置-->
+
+    <com.example.kit.activity.CircleMenuLayout
+        android:id="@+id/id_menulayout"
+        android:layout_width="354dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_bg3"
+        android:padding="100dp"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_toolbar2">
+        <!--圆盘中间位置布局-->
+        <RelativeLayout
+            android:id="@+id/id_circle_menu_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--急救场景图片-->
+            <ImageView
+                android:id="@+id/iv_znz"
+                android:layout_width="104.0dip"
+                android:layout_height="104.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/heart" />
+            <!--拨打120外框-->
+            <ImageView
+                android:layout_width="116.0dip"
+                android:layout_height="116.0dip"
+                android:layout_centerInParent="true"
+                android:background="@drawable/heart" />
+        </RelativeLayout>
+    </com.example.kit.activity.CircleMenuLayout>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:background="#f3d4d5"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_menulayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

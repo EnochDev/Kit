@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Kit</string>
+    <string name="CPR_player">CPR</string>
+    <string name="begin_CPR">开始\nCPR</string>
+    <string name="mode">TrainMode</string>
+    <string name="restart">重新开始</string>
+    <string name="exit">退出</string>
+    <string name="fore">前进</string>
+    <string name="back">后退</string>
+    <string name="total_time">总计时长</string>
+    <string name="clock">Timekeeping</string>
+    <string name="pause">暂停</string>
+    <string name="play">play</string>
+    <string name="resume">开始</string>
+    <string name="modelLabel">Model</string>
+    <string name="deviceLabel">Device</string>
+    <string name="switchCamera">切换</string>
+    <string name="captureScreen">拍照</string>
+    <string name="tips">请让身体中轴线平行于手机屏幕中轴线，并让上半身都进入屏幕内，以达到较准确的效果，稳定后可以capture下来进行参照</string>
+
+    <string name="test">检测</string>
+    <string name="call">拨打120</string>
+    <string name="search">急救查询</string>
+    <string name="train">使用指导</string>
+
+</resources>
